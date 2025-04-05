@@ -3,16 +3,42 @@ const sections = document.querySelectorAll('section');
 let currentIndex = 0;
 let isAnimating = false;
 
+function smoothScrollTo(targetY, duration = 800) {
+  const startY = container.scrollTop;
+  const distance = targetY - startY;
+  const startTime = performance.now();
+
+  function easeInOut(t) {
+    return t < 0.5
+      ? 2 * t * t
+      : -1 + (4 - 2 * t) * t;
+  }
+
+  function animate(time) {
+    const elapsed = time - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = easeInOut(progress);
+
+    container.scrollTop = startY + distance * eased;
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      isAnimating = false;
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
 function scrollToSection(index) {
   if (index < 0 || index >= sections.length) return;
 
   isAnimating = true;
   currentIndex = index;
-  sections[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-  setTimeout(() => {
-    isAnimating = false;
-  }, 800); // inertia-like scroll window
+  const targetY = sections[index].offsetTop;
+  smoothScrollTo(targetY);
 }
 
 // Wheel/trackpad scroll detection

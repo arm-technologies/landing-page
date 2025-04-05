@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: auto;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
@@ -20,7 +20,7 @@ body {
   height: 100vh;
   overflow: hidden;
   scroll-behavior: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: auto;
   /* overflow-y: scroll; */
   /* scroll-snap-type: y mandatory; */
 }
