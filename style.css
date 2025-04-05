@@ -9,6 +9,8 @@ body {
   height: 100%;
   overflow: hidden;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
@@ -17,10 +19,10 @@ body {
 .scroll-container {
   height: 100vh;
   overflow: hidden;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
   /* overflow-y: scroll; */
   /* scroll-snap-type: y mandatory; */
-  /* scroll-behavior: auto; */
-  /* -webkit-overflow-scrolling: touch; */
 }
 
 /* Hide scrollbar */
@@ -61,7 +63,7 @@ body {
 
 section {
   height: 100vh;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: none;
   /* scroll-snap-stop: always; */
   display: flex;
   flex-direction: column;
