@@ -16,7 +16,7 @@
       <div class="spacer"></div>
       <div class="navbar">
         <div class="navbar-logo">
-          <img src="Logo.svg" alt="ARM Logo">
+          <img src="img/Logo.svg" alt="ARM Logo">
         </div>
         <div class="burger"
           onclick="this.classList.toggle('open');document.querySelector('.navbar-menu').classList.toggle('active')">
@@ -25,11 +25,11 @@
           <div></div>
         </div>
         <div class="navbar-menu">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#">Team</a>
-          <a href="#">Services</a>
-          <a href="#">Contacts</a>
+          <a href="#" data-index="0">Home</a>
+          <a href="#" data-index="1">About</a>
+          <a href="#" data-index="2">Team</a>
+          <a href="#" data-index="3">Services</a>
+          <a href="#" data-index="4">Contacts</a>
         </div>
       </div>
       <div class="hero-content">
@@ -39,18 +39,22 @@
           <button class="cta-button">Book a Call</button>
         </div>
         <div class="hero-image">
-          <img src="cicd.png" alt="CI/CD Process">
+          <img src="img/cicd.png" alt="CI/CD Process">
         </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <h2>About Us</h2>
-      <p>We are a team of cloud-native DevOps engineers focused on automation, CI/CD, infrastructure as code, and
-        scalable cloud architecture. Our mission is to simplify delivery pipelines and empower teams with reliable
-        systems and practices. bla-bla...</p>
+      <div class="section-content">
+        <h2>About Us</h2>
+        <p>We are a team of cloud-native DevOps engineers focused on automation, CI/CD, infrastructure as code, and
+          scalable cloud architecture. Our mission is to simplify delivery pipelines and empower teams with reliable
+          systems and practices. bla-bla...</p>
+      </div>
     </section>
   </div>
+
+  <script src="scripts/scroll.js"></script>
 </body>
 
 </html>
