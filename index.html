@@ -2,21 +2,32 @@
 <html lang="en">
 
 <head>
+  <!-- meta -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>DevOps Services - ARM</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+  <!-- icons -->
+  <link rel="icon" href="javascript:void(0)" type="image/svg+xml">
+  <!-- fonts should be here -->
+
+  <!-- style -->
+  <link rel="preload" href="styles/style.css" as="style">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preload" href="styles/media.css" as="style">
+  <link rel="stylesheet" href="styles/media.css">
+  <!-- title -->
+  <title>FlowBorne Tech</title>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="background"></div>
   <div class="scroll-container">
-    <section class="hero">
-      <div class="spacer"></div>
-      <div class="navbar">
-        <div class="navbar-logo">
-          <img src="img/Logo.svg" alt="ARM Logo">
+    <!-- header -->
+    <div class="navbar">
+      <div class="navbar-inner clay-card">
+        <div class="logo">
+          <img src="img/logo.svg" alt="ARM Logo" />
         </div>
         <div class="burger"
           onclick="this.classList.toggle('open');document.querySelector('.navbar-menu').classList.toggle('active')">
@@ -25,36 +36,189 @@
           <div></div>
         </div>
         <div class="navbar-menu">
-          <a href="#" data-index="0">Home</a>
-          <a href="#" data-index="1">About</a>
-          <a href="#" data-index="2">Team</a>
-          <a href="#" data-index="3">Services</a>
-          <a href="#" data-index="4">Contacts</a>
+          <div class="navbar-links">
+            <a class="navbar-item clay-card link" href="#" data-index="0">Home</a>
+            <a class="navbar-item clay-card link about-item" href="#" data-index="1">About us</a>
+            <a class="navbar-item clay-card link" href="#" data-index="2">Services</a>
+            <a class="navbar-item clay-card link" href="#" data-index="3">Pricing</a>
+            <a class="navbar-item clay-card link" href="#" data-index="5">Contacts</a>
+          </div>
+          <a class="call-button clay-card link" href="#" data-index="4">Book a Call</a>
         </div>
       </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>DevOps Services in Your Pocket</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button class="cta-button">Book a Call</button>
+    </div>
+
+    <!-- home section -->
+    <section class="home-section">
+      <div class="home-container">
+        <div class="home-content clay-card">
+          <div class="home-title">
+            <h1>DevOps Services<br>in Your Pocket —<br>Secure and Effortless</h1>
+            <p>Your all-in-one DevOps partner for automation, cloud, CI/CD, and beyond.</p>
+            <a href="#" data-index="4" class="link">Schedule a Meeting ➜</a>
+          </div>
+          <img src="img/home-image.png" alt="Home Visual">
         </div>
-        <div class="hero-image">
-          <img src="img/cicd.png" alt="CI/CD Process">
+        <div class="home-about-content">
+          <div class="slider-wrapper">
+            <button class="slider-arrow home-left-arrow left-arrow">&#8592;</button>
+            <div class="home-about-slider clay-card">
+              <div class="home-slide active">
+                <div class="subtitle">Our Mission 🚀</div>
+                <p>
+                  As a group of experienced DevOps engineers, we have deep knowledge in planning, building, and
+                  maintaining efficient, secure, and convenient software development workflows through DevOps
+                  methodology.
+                </p>
+                <p>
+                  We work with startups and small to medium businesses, providing comprehensive DevOps solutions
+                  tailored
+                  to their unique needs. Our focus is on helping these organizations streamline their development
+                  processes, optimize their workflows, and eliminate inefficiencies in their software delivery
+                  pipelines.
+                  Through our expertise and proven methodologies, we enable our clients to achieve faster time-to-market
+                  while maintaining rigorous quality standards and implementing robust security measures. We understand
+                  the specific challenges faced by growing businesses and deliver solutions that scale with their
+                  evolving
+                  requirements.
+                </p>
+              </div>
+              <div class="home-slide">
+                <div class="subtitle">Benefits we provide 💎</div>
+                <p>Our DevOps-as-a-Service approach delivers concrete business value through:</p>
+                <ul>
+                  <li>🚀 Reduced time-to-market by automating deployment pipelines and eliminating manual bottlenecks
+                  </li>
+                  <li>🔒 Enhanced security through built-in security practices and continuous vulnerability scanning
+                  </li>
+                  <li>📈 Increased development efficiency with standardized workflows and infrastructure automation</li>
+                  <li>💵 Lower operational costs by optimizing cloud resource usage and implementing cost management
+                    strategies</li>
+                  <li>🔍 Improved reliability through robust monitoring, alerting, and disaster recovery solutions</li>
+                </ul>
+              </div>
+              <div class="home-slide">
+                <div class="subtitle">Our Vision ⭐</div>
+                <p>Our vision is to be the trusted DevOps partner for growing businesses, empowering them to achieve
+                  technical excellence and competitive advantage through modern software delivery practices.</p>
+                <p>We are committed to delivering transformative solutions that enable organizations to harness the full
+                  potential
+                  of DevOps methodologies, fostering innovation and agility in their development processes. Through our
+                  expertise and dedication, we strive to make enterprise-grade DevOps capabilities accessible and
+                  manageable for organizations of all sizes, helping them build sustainable, secure, and efficient
+                  development cultures. Our approach combines technical mastery with practical implementation, ensuring
+                  that our clients can readily adopt and benefit from advanced DevOps practices while maintaining
+                  operational excellence and scalability in their software development lifecycle.</p>
+              </div>
+            </div>
+            <button class="slider-arrow home-right-arrow right-arrow">&#8594;</button>
+          </div>
+          <div class="slider-dots">
+            <span class="home-dot dot active"></span>
+            <span class="home-dot dot"></span>
+            <span class="home-dot dot"></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="section-content">
-        <h2>About Us</h2>
-        <p>We are a team of cloud-native DevOps engineers focused on automation, CI/CD, infrastructure as code, and
-          scalable cloud architecture. Our mission is to simplify delivery pipelines and empower teams with reliable
-          systems and practices. bla-bla...</p>
+    <!-- about section -->
+    <section class="about-section" data-section="about">
+      <div class="about-image" id="about-image">
+        <img src="img/about-image.png" alt="About Visual">
       </div>
+      <div class="about-container">
+        <!-- <h2 class="about-title">About Us</h2> -->
+        <div class="about-content">
+          <div class="slider-wrapper">
+            <button class="slider-arrow about-left-arrow left-arrow">&#8592;</button>
+            <div class="about-slider clay-card">
+              <div class="about-slide active">
+                <div class="subtitle">Our Mission 🚀</div>
+                <p>
+                  As a group of experienced DevOps engineers, we have deep knowledge in planning, building, and
+                  maintaining efficient, secure, and convenient software development workflows through DevOps
+                  methodology.
+                </p>
+                <p>
+                  We work with startups and small to medium businesses, providing comprehensive DevOps solutions
+                  tailored
+                  to their unique needs. Our focus is on helping these organizations streamline their development
+                  processes, optimize their workflows, and eliminate inefficiencies in their software delivery
+                  pipelines.
+                  Through our expertise and proven methodologies, we enable our clients to achieve faster time-to-market
+                  while maintaining rigorous quality standards and implementing robust security measures. We understand
+                  the specific challenges faced by growing businesses and deliver solutions that scale with their
+                  evolving
+                  requirements.
+                </p>
+              </div>
+              <div class="about-slide">
+                <div class="subtitle">Benefits we provide 💎</div>
+                <p>Our DevOps-as-a-Service approach delivers concrete business value through:</p>
+                <ul>
+                  <li>🚀 Reduced time-to-market by automating deployment pipelines and eliminating manual bottlenecks
+                  </li>
+                  <li>🔒 Enhanced security through built-in security practices and continuous vulnerability scanning
+                  </li>
+                  <li>📈 Increased development efficiency with standardized workflows and infrastructure automation</li>
+                  <li>💵 Lower operational costs by optimizing cloud resource usage and implementing cost management
+                    strategies</li>
+                  <li>🔍 Improved reliability through robust monitoring, alerting, and disaster recovery solutions</li>
+                </ul>
+              </div>
+              <div class="about-slide">
+                <div class="subtitle">Our Vision ⭐</div>
+                <p>Our vision is to be the trusted DevOps partner for growing businesses, empowering them to achieve
+                  technical excellence and competitive advantage through modern software delivery practices.</p>
+                <p>We are committed to delivering transformative solutions that enable organizations to harness the full
+                  potential
+                  of DevOps methodologies, fostering innovation and agility in their development processes. Through our
+                  expertise and dedication, we strive to make enterprise-grade DevOps capabilities accessible and
+                  manageable for organizations of all sizes, helping them build sustainable, secure, and efficient
+                  development cultures. Our approach combines technical mastery with practical implementation, ensuring
+                  that our clients can readily adopt and benefit from advanced DevOps practices while maintaining
+                  operational excellence and scalability in their software development lifecycle.</p>
+              </div>
+            </div>
+            <button class="slider-arrow about-right-arrow right-arrow">&#8594;</button>
+          </div>
+          <div class="slider-dots">
+            <span class="about-dot dot active"></span>
+            <span class="about-dot dot"></span>
+            <span class="about-dot dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <h1>Services</h1>
+    </section>
+
+    <section class="pricing-section">
+      <h1>Flexible, Transparent Pricing for DevOps Services</h1>
+    </section>
+
+    <section class="cu-section">
+      <div class="cu-content">
+        <div class="clay-card">
+          <h1 class="cu-title">Book a Consultation</h1>
+          <div class="zcal-inline-widget" scrolling="yes"><a href="https://zcal.co/i/4isf-QG2">30
+              Minute Meeting - Schedule a meeting</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts-section">
+      <h1>Our Contacts</h1>
     </section>
   </div>
 
+  <script src="scripts/about-slider.js"></script>
   <script src="scripts/scroll.js"></script>
+  <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
 </body>
 
 </html>

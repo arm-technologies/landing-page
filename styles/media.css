@@ -1,0 +1,138 @@
+/* ADAPTIVE */
+@media (max-width: 970px) {
+  .home-content img {
+    overflow: hidden;
+    display: none;
+  }
+
+  .about-content {
+    padding-left: 0;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-content {
+    padding: 0 20px;
+  }
+
+  .about-slide ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .slider-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .about-image img {
+    display: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .burger {
+    display: flex;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: fit-content;
+    width: 50%;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    font-size: 18px;
+    text-align: center;
+    background: black;
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+  }
+
+  .navbar-links {
+    flex: unset;
+    justify-content: unset;
+    flex-direction: column;
+    padding: 100px 20px 20px 20px;
+  }
+
+  .call-button {
+    margin-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 14px 18px;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    justify-content: center;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .home-content a {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .about-slide {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .scroll-slide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-item {
+    display: initial;
+  }
+  .home-content {
+    text-align: left;
+  }
+
+  .home-about-content {
+    display: none;
+  }
+
+  .about-section {
+    display: flex;
+  }
+  
+  .subtitle {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .about-slide p {
+    font-size: 0.8rem;
+  }
+  
+  .about-slide li {
+    font-size: 0.8rem;
+  }
+}

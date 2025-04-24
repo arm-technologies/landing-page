@@ -32,6 +32,18 @@ function smoothScrollTo(targetY, duration = 800) {
 }
 
 function scrollToSection(index) {
+  const direction = index > currentIndex ? 1 : -1;
+  index = Math.max(0, Math.min(index, sections.length - 1));
+
+  // Skip hidden sections
+  while (
+    index >= 0 &&
+    index < sections.length &&
+    window.getComputedStyle(sections[index]).display === 'none'
+  ) {
+    index += direction;
+  }
+
   if (index < 0 || index >= sections.length) return;
 
   isAnimating = true;
@@ -43,20 +55,29 @@ function scrollToSection(index) {
 
 // Wheel/trackpad scroll detection
 let wheelDeltaBuffer = 0;
-const wheelSensitivity = 2;
+let wheelLocked = false;
+const wheelSensitivity = 20;
 
 window.addEventListener('wheel', (e) => {
-  if (isAnimating) return;
+  if (isAnimating || wheelLocked) return;
 
-  wheelDeltaBuffer += e.deltaY;
+  // Normalize for deltaMode (pixels vs lines vs pages)
+  const delta = e.deltaY;
 
-  if (wheelDeltaBuffer > wheelSensitivity) {
+  if (Math.abs(delta) < wheelSensitivity) return;
+
+  wheelLocked = true;
+
+  if (delta > 0) {
     scrollToSection(currentIndex + 1);
-    wheelDeltaBuffer = 0;
-  } else if (wheelDeltaBuffer < -wheelSensitivity) {
+  } else {
     scrollToSection(currentIndex - 1);
-    wheelDeltaBuffer = 0;
   }
+
+  // Unlock after a delay (inertia protection)
+  setTimeout(() => {
+    wheelLocked = false;
+  }, 800);
 }, { passive: false });
 
 // Touch/swipe
@@ -93,7 +114,7 @@ window.addEventListener('keydown', (e) => {
 });
 
 // Burger menu link scroll
-document.querySelectorAll('.navbar-menu a').forEach(link => {
+document.querySelectorAll('.link').forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     const index = parseInt(link.getAttribute('data-index'));
@@ -109,8 +130,9 @@ document.querySelectorAll('.navbar-menu a').forEach(link => {
   });
 });
 
+
 // Section content animation on entry (experimenting)
-const sectionContents = document.querySelectorAll('.section-content');
+const sectionContents = document.querySelectorAll('section');
 
 const contentObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
