@@ -1,4 +1,22 @@
 /* ADAPTIVE */
+
+/* Large Tablets & Small Desktops */
+@media (max-width: 1200px) {
+  section {
+    max-width: 90%;
+    padding: 150px 0;
+  }
+  
+  .home-title h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+  }
+  
+  .services-wrapper {
+    gap: 30px;
+  }
+}
+
+/* Tablets & Medium Screens */
 @media (max-width: 970px) {
   .home-content img {
     overflow: hidden;
@@ -12,6 +30,7 @@
   .home-content {
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 
   .about-container {
@@ -37,8 +56,60 @@
   .about-image img {
     display: none;
   }
+  
+  /* Services section improvements */
+  .services-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .services-sidebar {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 20px 20px 30px;
+    overflow: hidden;
+  }
+  
+  .services-sidebar.collapsed {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+  }
+  
+  .services-toggle {
+    display: flex;
+  }
+  
+  .services-toggle.active .icon {
+    transform: rotate(180deg);
+  }
+  
+  .services-content {
+    padding: 25px;
+  }
+  
+  .service-tab h1 {
+    font-size: 32px;
+  }
+  
+  .service-tab h2 {
+    font-size: 22px;
+  }
+  
+  /* Pricing section improvements */
+  .pricing-grid {
+    width: 90%;
+  }
+  
+  .pricing-card {
+    flex: 1 1 250px;
+  }
 }
 
+/* Mobile Navigation Breakpoint */
 @media (max-width: 930px) {
   .burger {
     display: flex;
@@ -50,7 +121,7 @@
     top: 0;
     right: -100%;
     height: fit-content;
-    width: 50%;
+    width: 70%;  /* Increased for better usability */
     transition: right 0.4s ease;
     z-index: 1000;
     font-size: 18px;
@@ -58,13 +129,15 @@
     background: black;
     backdrop-filter: blur(20px);
     border-radius: 12px;
+    padding: 20px 0;  /* Added padding */
   }
 
   .navbar-links {
     flex: unset;
     justify-content: unset;
     flex-direction: column;
-    padding: 100px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;  /* Reduced top padding */
+    gap: 20px;  /* Better spacing between links */
   }
 
   .call-button {
@@ -76,10 +149,28 @@
 
   .navbar-menu.active {
     right: 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);  /* Added shadow for better visual separation */
+  }
+  
+  /* Comparison table improvements */
+  .comparison-table {
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 15px;  /* Space for scrollbar */
+  }
+  
+  .comparison-table table {
+    min-width: 600px;  /* Ensures table stays readable */
   }
 }
 
+/* Medium Mobile Devices */
 @media (max-width: 768px) {
+  section {
+    padding: 120px 0;
+    max-width: 95%;
+  }
+  
   .home-section {
     justify-content: center;
   }
@@ -88,9 +179,9 @@
     font-size: 1rem;
   }
 
-  .home-content a {
-    padding: 12px 24px;
-    font-size: 0.9rem;
+  .home-button {
+    padding: 12px 40px;  /* Smaller button on mobile */
+    font-size: 18px;
   }
 
   .about-slide {
@@ -104,15 +195,70 @@
 
   .slider-wrapper {
     flex-direction: column;
+    padding: 0 10px;  /* Reduced padding */
+  }
+  
+  /* Fix slider arrows */
+  .left-arrow {
+    left: -10px;
+  }
+  
+  .right-arrow {
+    right: -10px;
+  }
+  
+  /* Footer improvements */
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+  }
+  
+  /* Service tabs */
+  .service-tab h1 {
+    font-size: 32px;
+  }
+  
+  .service-tab h2 {
+    font-size: 22px;
+  }
+  
+  .service-tab h3 {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  
+  .service-tab p,
+  .service-tab li {
+    font-size: 16px;
+  }
+  
+  .services-content {
+    padding: 25px;
   }
 }
 
+/* Small Mobile Devices */
 @media (max-width: 640px) {
   .about-item {
     display: initial;
   }
+  
   .home-content {
-    text-align: left;
+    text-align: center;  /* Keep centered on small screens */
   }
 
   .home-about-content {
@@ -125,14 +271,135 @@
   
   .subtitle {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;  /* Reduced from 36px */
+    margin-bottom: 40px;  /* Reduced from 80px */
   }
 
   .about-slide p {
-    font-size: 0.8rem;
+    font-size: 16px;  /* Increased from 0.8rem for better readability */
   }
   
   .about-slide li {
-    font-size: 0.8rem;
+    font-size: 16px;  /* Increased from 0.8rem */
+  }
+  
+  /* Pricing cards improvements */
+  .pricing-card {
+    flex: 1 1 100%;
+    min-width: unset;
+    max-width: unset;
+  }
+  
+  /* Compare section */
+  .comparison-title {
+    font-size: 28px;
+  }
+  
+  .quote-section h2 {
+    font-size: 24px;
+  }
+  
+  .quote-section p {
+    font-size: 16px;
+  }
+  
+  .quote-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  /* Calendar fixes */
+  #my-cal-inline {
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  /* Navbar center adjustment */
+  .navbar {
+    width: 90%;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .home-title h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  
+  .home-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .navbar-menu {
+    width: 85%;  /* Almost full width on tiny screens */
+  }
+  
+  .service-item {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .services-sidebar h1 {
+    padding: 20px 15px 10px 15px;
+    font-size: 18px;
+  }
+  
+  .service-tab h1 {
+    font-size: 28px;
+  }
+  
+  .service-tab h2 {
+    font-size: 20px;
+  }
+  
+  .service-tab h3 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .service-tab p,
+  .service-tab li {
+    font-size: 14px;
+  }
+  
+  /* Footer simplification */
+  .footer-container {
+    width: 90%;
+  }
+  
+  .cu-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact section */
+  .cu-content {
+    width: 100%;
+  }
+}
+
+/* Fix for calendar on small screens */
+@media (max-width: 768px) {
+  #my-cal-inline {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+/* Landscape orientation fixes */
+@media (max-height: 600px) and (orientation: landscape) {
+  section {
+    padding: 100px 0;
+  }
+  
+  .home-title h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+  }
+  
+  .navbar-menu.active {
+    overflow-y: auto;
+    max-height: 90vh;
   }
 }
