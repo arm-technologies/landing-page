@@ -20,35 +20,35 @@ serviceItems.forEach(item => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Get elements
   const toggleBtn = document.querySelector('.services-toggle');
   const sidebar = document.querySelector('.services-sidebar');
   const serviceItems = document.querySelectorAll('.service-item');
-  
+
   // Set up toggle button
-  toggleBtn.addEventListener('click', function() {
+  toggleBtn.addEventListener('click', function () {
     sidebar.classList.toggle('collapsed');
     this.classList.toggle('active');
   });
-  
+
   // On mobile, collapse sidebar when a service is selected
   serviceItems.forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
       if (window.innerWidth <= 970) {
         sidebar.classList.add('collapsed');
         toggleBtn.classList.remove('active');
-        
+
         // Scroll to content area
-        document.querySelector('.services-content').scrollIntoView({
-          behavior: 'smooth'
-        });
+        // document.querySelector('.services-section').scrollIntoView({
+        //   behavior: 'smooth'
+        // });
       }
     });
   });
-  
+
   // Handle resize events
-  window.addEventListener('resize', function() {
+  window.addEventListener('resize', function () {
     if (window.innerWidth > 970) {
       // Remove mobile-specific classes on desktop
       sidebar.classList.remove('collapsed');

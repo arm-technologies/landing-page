@@ -8,7 +8,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
   <!-- icons -->
-  <link rel="icon" href="img/Logo.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <!-- fonts should be here -->
 
   <!-- style -->
@@ -27,7 +27,7 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="logo">
-          <img src="img/Logo.svg" alt="ARM Logo" />
+          <img src="img/navbar-logo.svg" alt="ARM Logo" />
         </div>
         <div class="burger"
           onclick="this.classList.toggle('open');document.querySelector('.navbar-menu').classList.toggle('active')">
@@ -37,15 +37,14 @@
         </div>
         <div class="navbar-menu">
           <div class="navbar-links">
-            <a class="navbar-item link" href="#" data-index="0">Home</a>
-            <a class="navbar-item link about-item" href="#about-section" data-index="1">About us</a>
-            <a class="navbar-item link" href="#services-section" data-index="2">Services</a>
-            <a class="navbar-item link" href="#pricing-section" data-index="3">Pricing</a>
-            <a class="navbar-item link" href="#comparison-section" data-index="4">Comparison</a>
-            <a class="navbar-item link" href="#cu-section" data-index="5">Contacts</a>
+            <a class="navbar-item link" href="#">Home</a>
+            <a class="navbar-item link" href="#about-section">About</a>
+            <a class="navbar-item link" href="#services-section">Services</a>
+            <a class="navbar-item link" href="#pricing-section">Pricing</a>
+            <a class="navbar-item link" href="#cu-section">Contacts</a>
           </div>
           <a href="#cu-section">
-            <button class="call-button">Book a Call</button>
+            <button class="call-button link">Book a Call</button>
           </a>
         </div>
       </div>
@@ -62,68 +61,7 @@
               <button class="home-button">Schedule a Meeting</button>
             </a>
           </div>
-          <!-- <img src="img/home-image.png" alt="Home Visual"> -->
         </div>
-        <!-- <div class="home-about-content">
-          <div class="slider-wrapper">
-            <button class="slider-arrow home-left-arrow left-arrow">&#8592;</button>
-            <div class="home-about-slider">
-              <div class="home-slide active">
-                <div class="subtitle">Our Mission 🚀</div>
-                <p>
-                  As a group of experienced DevOps engineers, we have deep knowledge in planning, building, and
-                  maintaining efficient, secure, and convenient software development workflows through DevOps
-                  methodology.
-                </p>
-                <p>
-                  We work with startups and small to medium businesses, providing comprehensive DevOps solutions
-                  tailored
-                  to their unique needs. Our focus is on helping these organizations streamline their development
-                  processes, optimize their workflows, and eliminate inefficiencies in their software delivery
-                  pipelines.
-                  Through our expertise and proven methodologies, we enable our clients to achieve faster time-to-market
-                  while maintaining rigorous quality standards and implementing robust security measures. We understand
-                  the specific challenges faced by growing businesses and deliver solutions that scale with their
-                  evolving
-                  requirements.
-                </p>
-              </div>
-              <div class="home-slide">
-                <div class="subtitle">Benefits we provide 💎</div>
-                <p>Our DevOps-as-a-Service approach delivers concrete business value through:</p>
-                <ul>
-                  <li>🚀 Reduced time-to-market by automating deployment pipelines and eliminating manual bottlenecks
-                  </li>
-                  <li>🔒 Enhanced security through built-in security practices and continuous vulnerability scanning
-                  </li>
-                  <li>📈 Increased development efficiency with standardized workflows and infrastructure automation</li>
-                  <li>💵 Lower operational costs by optimizing cloud resource usage and implementing cost management
-                    strategies</li>
-                  <li>🔍 Improved reliability through robust monitoring, alerting, and disaster recovery solutions</li>
-                </ul>
-              </div>
-              <div class="home-slide">
-                <div class="subtitle">Our Vision ⭐</div>
-                <p>Our vision is to be the trusted DevOps partner for growing businesses, empowering them to achieve
-                  technical excellence and competitive advantage through modern software delivery practices.</p>
-                <p>We are committed to delivering transformative solutions that enable organizations to harness the full
-                  potential
-                  of DevOps methodologies, fostering innovation and agility in their development processes. Through our
-                  expertise and dedication, we strive to make enterprise-grade DevOps capabilities accessible and
-                  manageable for organizations of all sizes, helping them build sustainable, secure, and efficient
-                  development cultures. Our approach combines technical mastery with practical implementation, ensuring
-                  that our clients can readily adopt and benefit from advanced DevOps practices while maintaining
-                  operational excellence and scalability in their software development lifecycle.</p>
-              </div>
-            </div>
-            <button class="slider-arrow home-right-arrow right-arrow">&#8594;</button>
-          </div>
-          <div class="slider-dots">
-            <span class="home-dot dot active"></span>
-            <span class="home-dot dot"></span>
-            <span class="home-dot dot"></span>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -132,56 +70,74 @@
       <div class="about-wrapper">
         <div class="slider-wrapper">
           <button class="slider-arrow about-left-arrow left-arrow">&#10094;</button>
-    
+
           <div class="about-slider">
             <div class="about-slide active">
               <h2 class="subtitle">Our Mission</h2>
               <p>
-                At Flowborne, we're experienced DevOps engineers passionate about building efficient, secure, and streamlined software development workflows. Our mission is to empower businesses to scale with reliable, secure, and cost-effective DevOps solutions.
+                At FlowBorne, we're experienced DevOps engineers passionate about building efficient, secure, and
+                streamlined software development workflows. Our mission is to empower businesses to scale with reliable,
+                secure, and cost-effective DevOps solutions.
               </p>
               <p>
-                We specialize in providing <strong>DevOps-as-a-Service</strong> for startups and SMBs, creating tailored solutions that address your unique challenges. By optimizing development processes and eliminating inefficiencies, we help you achieve faster time-to-market while maintaining rigorous quality standards and robust security measures.
+                We specialize in providing <strong>DevOps-as-a-Service</strong> for startups and SMBs, creating tailored
+                solutions that address your unique challenges. By optimizing development processes and eliminating
+                inefficiencies, we help you achieve faster time-to-market while maintaining rigorous quality standards
+                and robust security measures.
               </p>
             </div>
-            
+
             <div class="about-slide">
               <h2 class="subtitle">Our Expertise</h2>
               <p>
-                We deliver comprehensive DevOps services through expert consulting, helping you integrate DevOps practices into existing projects and identify opportunities for improvement. Our implementation services build secure CI/CD pipelines and automation systems from scratch, following industry best practices to ensure scalability.
+                We deliver comprehensive DevOps services through expert consulting, helping you integrate DevOps
+                practices into existing projects and identify opportunities for improvement. Our implementation services
+                build secure CI/CD pipelines and automation systems from scratch, following industry best practices.
               </p>
               <p>
-                Beyond implementation, we excel at workflow optimization by modernizing processes and legacy systems to enhance efficiency. Security is embedded at every development stage, with comprehensive vulnerability scanning and compliance monitoring. For businesses ready to evolve, we provide seamless cloud migration to major providers while ensuring business continuity, backed by ongoing support and continuous optimization of your DevOps ecosystem.
+                Beyond implementation, we excel at workflow optimization by modernizing processes and legacy systems to
+                enhance efficiency. Security is embedded at every development stage, with comprehensive vulnerability
+                scanning and compliance monitoring. For businesses ready to evolve, we provide seamless cloud migration
+                to major providers while ensuring business continuity, backed by ongoing support and continuous
+                optimization of your DevOps ecosystem.
               </p>
             </div>
-            
+
             <div class="about-slide">
               <h2 class="subtitle">Our Benefits & Vision</h2>
               <p>
-                Working with Flowborne delivers concrete business value through reduced time-to-market with automated deployment pipelines and enhanced security through continuous vulnerability scanning. Our clients enjoy increased efficiency with standardized workflows, lower costs through optimized cloud resource management, and improved reliability with robust monitoring and recovery systems.
+                Working with Flowborne delivers concrete business value through reduced time-to-market with automated
+                deployment pipelines and enhanced security through continuous vulnerability scanning. Our clients enjoy
+                increased efficiency with standardized workflows, lower costs through optimized cloud resource
+                management, and improved reliability with robust monitoring and recovery systems.
               </p>
               <p>
-                Our vision is to be the go-to DevOps partner for startups and product teams building the next generation of software. We're committed to making enterprise-grade DevOps capabilities accessible for organizations of all sizes, combining technical mastery with practical implementation to foster innovation and agility in development processes while maintaining operational excellence and scalability.
+                Our vision is to be the go-to DevOps partner for startups and product teams building the next generation
+                of software. We're committed to making enterprise-grade DevOps capabilities accessible for organizations
+                of all sizes, combining technical mastery with practical implementation to foster innovation and agility
+                in development processes while maintaining operational excellence and scalability.
               </p>
             </div>
           </div>
-    
+
           <button class="slider-arrow about-right-arrow right-arrow">&#10095;</button>
         </div>
-    
+
         <div class="slider-dots">
           <span class="about-dot dot active"></span>
           <span class="about-dot dot"></span>
           <span class="about-dot dot"></span>
         </div>
       </div>
-    </section>    
+    </section>
 
+    <!-- services section -->
     <section id="services-section" class="services-section">
-      <button class="services-toggle">
-        Services Menu <span class="icon">▼</span>
-      </button>
       <div class="services-wrapper">
-        <div class="services-sidebar">
+        <button class="services-toggle">
+          Services Menu <span class="icon">▼</span>
+        </button>
+        <div class="services-sidebar collapsed">
           <h1>Consulting</h1>
           <div class="service-item active" data-tab="tab1">DevOps Consulting & Strategy</div>
           <h1>Implementation</h1>
@@ -214,7 +170,8 @@
             <h1>Implementation</h1>
             <h2>CI/CD Pipelines</h2>
             <h3>Overview:</h3>
-            <p>End-to-end design and implementation of secure, scalable CI/CD pipelines and infrastructure automation with industry best practices.</p>
+            <p>End-to-end design and implementation of secure, scalable CI/CD pipelines and infrastructure automation
+              with industry best practices.</p>
             <h3>What's Included:</h3>
             <ul>
               <li>GitOps-driven or event-based CI/CD workflow design</li>
@@ -232,7 +189,8 @@
             <h1>Implementation</h1>
             <h2>IaC/CaC & Automation</h2>
             <h3>Overview:</h3>
-            <p>Infrastructure and configuration as code (IaC/CaC) solutions for reliable, repeatable environment management.</p>
+            <p>Infrastructure and configuration as code (IaC/CaC) solutions for reliable, repeatable environment
+              management.</p>
             <h3>What's Included:</h3>
             <ul>
               <li>Terraform, CloudFormation, or Pulumi infrastructure setups</li>
@@ -241,7 +199,8 @@
               <li>Secrets and configuration management best practices</li>
             </ul>
             <h3>Best For:</h3>
-            <p>Businesses scaling to the cloud or modernizing environments needing resilient, codified infrastructure.</p>
+            <p>Businesses scaling to the cloud or modernizing environments needing resilient, codified infrastructure.
+            </p>
           </div>
           <div class="service-tab" id="tab4">
             <h1>Migration & Modernization</h1>
@@ -256,7 +215,8 @@
               <li>Cloud-native adoption, including containerization where needed</li>
             </ul>
             <h3>Best For:</h3>
-            <p>Organizations moving from on-premise to cloud or optimizing existing cloud deployments for better performance and cost control.</p>
+            <p>Organizations moving from on-premise to cloud or optimizing existing cloud deployments for better
+              performance and cost control.</p>
           </div>
           <div class="service-tab" id="tab5">
             <h1>Migration & Modernization</h1>
@@ -277,7 +237,8 @@
             <h1>Security & Observability</h1>
             <h2>Security & Compliance Integration</h2>
             <h3>Overview:</h3>
-            <p>Embed security into every layer of your DevOps workflows to meet regulatory and operational standards.</p>
+            <p>Embed security into every layer of your DevOps workflows to meet regulatory and operational standards.
+            </p>
             <h3>What's Included:</h3>
             <ul>
               <li>Static and dynamic code analysis integration</li>
@@ -292,7 +253,8 @@
             <h1>Security & Observability</h1>
             <h2>Observability</h2>
             <h3>Overview:</h3>
-            <p>Build real-time observability into your infrastructure and applications for proactive monitoring, faster incident response, and system optimization.</p>
+            <p>Build real-time observability into your infrastructure and applications for proactive monitoring, faster
+              incident response, and system optimization.</p>
             <h3>What's Included:</h3>
             <ul>
               <li>End-to-end monitoring setup (metrics, logs, traces)</li>
@@ -301,16 +263,17 @@
               <li>Performance dashboards (Grafana, Prometheus, Loki, Tempo)</li>
             </ul>
             <h3>Best For:</h3>
-            <p>Teams that want clear insights into system health, performance, and incident detection before issues impact users.</p>
+            <p>Teams that want clear insights into system health, performance, and incident detection before issues
+              impact users.</p>
           </div>
         </div>
       </div>
-    </section>     
+    </section>
 
+    <!-- pricing section -->
     <section id="pricing-section" class="pricing-section">
       <h1 class="pricing-title">Flexible, Transparent Pricing for DevOps Services</h1>
       <p class="pricing-subtitle">Every business is different. We tailor our services to match your needs.</p>
-    
       <div class="pricing-grid">
         <div class="pricing-row">
           <div class="pricing-card">
@@ -322,7 +285,7 @@
               <li>Toolchain evaluation</li>
             </ul>
           </div>
-    
+
           <div class="pricing-card">
             <h2>DevOps Implementation</h2>
             <p class="price">From $3,000 <span>(Advanced from $6,000)</span></p>
@@ -332,7 +295,7 @@
               <li>Environment standardization</li>
             </ul>
           </div>
-    
+
           <div class="pricing-card">
             <h2>Cloud Migration & Modernisation</h2>
             <p class="price">$2,000 - $5,000+ or $100 - $150/hr</p>
@@ -343,7 +306,7 @@
             </ul>
           </div>
         </div>
-    
+
         <div class="pricing-row center-row">
           <div class="pricing-card">
             <h2>Security & Observability</h2>
@@ -354,7 +317,7 @@
               <li>IAM & secrets management</li>
             </ul>
           </div>
-    
+
           <div class="pricing-card">
             <h2>Ongoing Support & Management</h2>
             <p class="price">$1,000 - $2,000+/month</p>
@@ -366,11 +329,11 @@
           </div>
         </div>
       </div>
-    </section>     
+    </section>
 
+    <!-- comparison section -->
     <section id="comparison-section" class="comparison-section">
       <h1 class="comparison-title">Quick Comparison</h1>
-    
       <div class="comparison-table">
         <table>
           <thead>
@@ -415,7 +378,7 @@
           </tbody>
         </table>
       </div>
-    
+
       <div class="quote-section">
         <h2>Need a Custom Quote?</h2>
         <p>Contact us to discuss your project needs and get a personalized estimate.</p>
@@ -423,14 +386,12 @@
           <button class="quote-button">Request a Quote</button>
         </a>
       </div>
-    </section>    
+    </section>
 
-    <section id="cu-section" class="cu-section">
-      <div class="cu-content">
-        <h1 class="cu-title">Book a Consultation</h1>
-        <!-- <div class="zcal-inline-widget" scrolling="yes"><a href="https://zcal.co/i/4isf-QG2">30
-            Minute Meeting - Schedule a meeting</a>
-        </div> -->
+    <!-- contacts section -->
+    <section id="contacts-section" class="contacts-section">
+      <div class="contacts-content">
+        <h1 class="contacts-title">Book a Consultation</h1>
         <div id="my-cal-inline"></div>
       </div>
     </section>
@@ -447,7 +408,7 @@
             <li><a href="#">Our team</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
           <ul class="footer-links">
             <li><a href="#">Book a meeting</a></li>
@@ -455,45 +416,64 @@
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
           <h3>Contacts</h3>
           <p>Email: <a href="mailto:support@flowborne.it.com">support@flowborne.it.com</a></p>
           <p>Phone: <a href="tel:+380631234567">+ 38 (063) 123-45-67</a></p>
         </div>
-        
+
         <div class="footer-column social-column">
           <div class="social-icons">
-            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg></a>
-            <a href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M23 9.71a8.5 8.5 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.36 78.36 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2c.12.35.32.93.81 1.3A3.27 3.27 0 004.56 19a79.42 79.42 0 007.89.3 80.44 80.44 0 008.4-.34 3.16 3.16 0 002.15-1 3 3 0 00.56-1.83 47.66 47.66 0 00.47-5.85 8.55 8.55 0 00-.03-.57zm-8.57 2.37L9.4 14.8a.4.4 0 01-.57-.37V9.57a.4.4 0 01.58-.36l5.03 2.72a.39.39 0 01-.01.7z"></path></svg></a>
-            <a href="#" aria-label="Discord"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg></a>
-            <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.699 1.028 1.592 1.028 2.683 0 3.841-2.337 4.687-4.565 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"></path></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                height="24" fill="currentColor">
+                <path
+                  d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                </path>
+              </svg></a>
+            <a href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                height="24" fill="currentColor">
+                <path
+                  d="M23 9.71a8.5 8.5 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.36 78.36 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2c.12.35.32.93.81 1.3A3.27 3.27 0 004.56 19a79.42 79.42 0 007.89.3 80.44 80.44 0 008.4-.34 3.16 3.16 0 002.15-1 3 3 0 00.56-1.83 47.66 47.66 0 00.47-5.85 8.55 8.55 0 00-.03-.57zm-8.57 2.37L9.4 14.8a.4.4 0 01-.57-.37V9.57a.4.4 0 01.58-.36l5.03 2.72a.39.39 0 01-.01.7z">
+                </path>
+              </svg></a>
+            <a href="#" aria-label="Discord"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                height="24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z">
+                </path>
+              </svg></a>
+            <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                height="24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.699 1.028 1.592 1.028 2.683 0 3.841-2.337 4.687-4.565 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z">
+                </path>
+              </svg></a>
           </div>
         </div>
       </div>
-      
+
       <div class="footer-copyright">
-        <p>© Copyright 2025 ARM Technologies. All rights reserved</p>
+        <p>© Copyright 2025 FlowBorne Technologies. All rights reserved</p>
       </div>
     </div>
   </footer>
 
+  <script src="scripts/burger.js"></script>
   <script src="scripts/about-slider.js"></script>
   <script src="scripts/services.js"></script>
-  <!-- <script src="scripts/scroll.js"></script> -->
-  <!-- <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script> -->
   <script type="text/javascript">
-    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "30min", {origin:"https://cal.com"});
-  
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", { origin: "https://cal.com" });
+
     Cal.ns["30min"]("inline", {
-      elementOrSelector:"#my-cal-inline",
-      config: {"layout":"month_view","theme":"light"},
+      elementOrSelector: "#my-cal-inline",
+      config: { "layout": "month_view", "theme": "light" },
       calLink: "andrii-bohatyrov-zbiynf/30min",
     });
-  
-    Cal.ns["30min"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#FADF11"},"dark":{"cal-brand":"#FADF11"}},"hideEventTypeDetails":false,"layout":"month_view"});
-    </script>
+
+    Cal.ns["30min"]("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#FADF11" }, "dark": { "cal-brand": "#FADF11" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+  </script>
 </body>
 
 </html>

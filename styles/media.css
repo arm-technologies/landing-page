@@ -2,11 +2,6 @@
 
 /* Large Tablets & Small Desktops */
 @media (max-width: 1200px) {
-  section {
-    max-width: 90%;
-    padding: 150px 0;
-  }
-  
   .home-title h1 {
     font-size: clamp(2.5rem, 5vw, 5rem);
   }
@@ -14,103 +9,18 @@
   .services-wrapper {
     gap: 30px;
   }
-}
 
-/* Tablets & Medium Screens */
-@media (max-width: 970px) {
-  .home-content img {
-    overflow: hidden;
-    display: none;
-  }
-
-  .about-content {
-    padding-left: 0;
-  }
-
-  .home-content {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .about-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .about-content {
-    padding: 0 20px;
-  }
-
-  .about-slide ul {
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  .slider-arrow {
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-  }
-
-  .about-image img {
-    display: none;
+  /* Fix slider arrows */
+  .left-arrow {
+    left: -10px;
   }
   
-  /* Services section improvements */
-  .services-wrapper {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .services-sidebar {
-    max-width: 100%;
-    min-width: 100%;
-    padding: 20px 20px 30px;
-    overflow: hidden;
-  }
-  
-  .services-sidebar.collapsed {
-    max-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    opacity: 0;
-  }
-  
-  .services-toggle {
-    display: flex;
-  }
-  
-  .services-toggle.active .icon {
-    transform: rotate(180deg);
-  }
-  
-  .services-content {
-    padding: 25px;
-  }
-  
-  .service-tab h1 {
-    font-size: 32px;
-  }
-  
-  .service-tab h2 {
-    font-size: 22px;
-  }
-  
-  /* Pricing section improvements */
-  .pricing-grid {
-    width: 90%;
-  }
-  
-  .pricing-card {
-    flex: 1 1 250px;
+  .right-arrow {
+    right: -10px;
   }
 }
 
-/* Mobile Navigation Breakpoint */
-@media (max-width: 930px) {
+@media (max-width: 1080px) {
   .burger {
     display: flex;
   }
@@ -151,7 +61,10 @@
     right: 0;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);  /* Added shadow for better visual separation */
   }
-  
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 970px) {
   /* Comparison table improvements */
   .comparison-table {
     overflow-x: auto;
@@ -162,15 +75,125 @@
   .comparison-table table {
     min-width: 600px;  /* Ensures table stays readable */
   }
+
+  .home-content img {
+    overflow: hidden;
+    display: none;
+  }
+
+  .about-content {
+    padding-left: 0;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-content {
+    padding: 0 20px;
+  }
+
+  .about-slide ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .slider-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .about-image img {
+    display: none;
+  }
+  
+  /* Services section improvements */
+  .services-section {
+    height: unset;
+    min-height: auto;
+    /* padding: 120px 0; */
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .services-sidebar {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 20px 20px 30px;
+  }
+  
+  .services-sidebar.collapsed {
+    /* max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0; */
+    display: none;
+  }
+  
+  .services-toggle {
+    display: flex;
+  }
+  
+  .services-toggle.active .icon {
+    transform: rotate(180deg);
+  }
+  
+  .services-content {
+    padding: 25px;
+  }
+  
+  .service-tab h1 {
+    font-size: 32px;
+  }
+  
+  .service-tab h2 {
+    font-size: 22px;
+  }
+  
+  /* Pricing section improvements */
+  .pricing-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
+  .pricing-grid {
+    width: 90%;
+  }
+  
+  .pricing-card {
+    flex: 1 1 250px;
+  }
+
+
+  .contacts-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+}
+
+@media (max-width: 880px) {
+  .social-icons {
+    justify-content: flex-start;
+  }
 }
 
 /* Medium Mobile Devices */
 @media (max-width: 768px) {
-  section {
-    padding: 120px 0;
-    max-width: 95%;
-  }
-  
   .home-section {
     justify-content: center;
   }
@@ -184,13 +207,13 @@
     font-size: 18px;
   }
 
+  .about-section {
+    max-width: 95%;
+  }
+
   .about-slide {
     max-height: 70vh;
     overflow-y: auto;
-  }
-
-  .scroll-slide::-webkit-scrollbar {
-    display: none;
   }
 
   .slider-wrapper {
@@ -245,18 +268,10 @@
   .service-tab li {
     font-size: 16px;
   }
-  
-  .services-content {
-    padding: 25px;
-  }
 }
 
 /* Small Mobile Devices */
 @media (max-width: 640px) {
-  .about-item {
-    display: initial;
-  }
-  
   .home-content {
     text-align: center;  /* Keep centered on small screens */
   }
@@ -284,6 +299,15 @@
   }
   
   /* Pricing cards improvements */
+  .pricing-title {
+    font-size: 24px;  /* Reduced from 36px */
+  }
+
+  .pricing-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
   .pricing-card {
     flex: 1 1 100%;
     min-width: unset;
@@ -292,7 +316,12 @@
   
   /* Compare section */
   .comparison-title {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    font-size: 14px;
   }
   
   .quote-section h2 {
@@ -313,15 +342,14 @@
     width: 100%;
     min-height: 600px;
   }
-  
-  /* Navbar center adjustment */
-  .navbar {
-    width: 90%;
-  }
 }
 
 /* Extra Small Devices */
 @media (max-width: 480px) {
+  .logo img {
+    height: 30px;
+  }
+
   .home-title h1 {
     font-size: clamp(2rem, 8vw, 3rem);
   }
@@ -331,11 +359,15 @@
     font-size: 16px;
     margin-top: 30px;
   }
-  
-  .navbar-menu {
-    width: 85%;  /* Almost full width on tiny screens */
+
+  .about-slide p {
+    font-size: 14px;
   }
   
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
   .service-item {
     padding: 12px 15px;
     font-size: 14px;
@@ -347,16 +379,16 @@
   }
   
   .service-tab h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .service-tab h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .service-tab h3 {
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
   
   .service-tab p,
@@ -369,13 +401,13 @@
     width: 90%;
   }
   
-  .cu-title {
+  .contacts-title {
     font-size: 28px;
     margin-bottom: 30px;
   }
   
   /* Contact section */
-  .cu-content {
+  .contacts-content {
     width: 100%;
   }
 }
