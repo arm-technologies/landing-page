@@ -272,6 +272,12 @@
 
 /* Small Mobile Devices */
 @media (max-width: 640px) {
+  section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
   .home-content {
     text-align: center;  /* Keep centered on small screens */
   }
