@@ -13,9 +13,20 @@ body, html {
   scroll-behavior: smooth;
   /* -webkit-overflow-scrolling: touch; */
   font-family: 'Roboto', sans-serif;
-  background: black;
-  z-index: -1;
+  /* background: black; */
+  /* z-index: -1; */
   color: white;
+}
+
+#c {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  mix-blend-mode: screen;
 }
 
 .background {
@@ -169,7 +180,7 @@ section {
   font-size: 16px;
   mix-blend-mode: normal;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   border: 0;
   box-shadow: 0 3px 0 rgb(202, 202, 202), 0 8px 15px rgba(0,0,0,0.3);
   transition: all 0.15s ease-in-out;
@@ -290,7 +301,7 @@ section {
   font-size: 20px;
   mix-blend-mode: normal;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   border: 0;
   box-shadow: 0 6px 0 #ddbb00, 0 8px 15px rgba(0,0,0,0.3);
   transition: all 0.15s ease-in-out;
