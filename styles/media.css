@@ -83,6 +83,19 @@
     padding-bottom: 15px;
   }
 
+  .home-section {
+    height: unset;
+    min-height: auto;
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  .about-section {
+    height: unset;
+    min-height: auto;
+    padding-top: 120px;
+  }
+
   .home-content img {
     overflow: hidden;
     display: none;
