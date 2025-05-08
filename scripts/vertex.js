@@ -18,7 +18,7 @@ const particleVertex = `
 
 const particleFragment = `
 	void main() {
-		gl_FragColor = vec4(0.00, 0.05, 1.00, 1.0);
+		gl_FragColor = vec4(1.00, 0.95, 0.00, 1.0);
 	}
 `;
 
@@ -29,7 +29,7 @@ function lerp(start, end, amount) {
 class Canvas {
   constructor() {
     this.config = {
-      canvas: document.querySelector('#c'),
+      canvas: document.querySelector('#background-dots'),
       winWidth: window.innerWidth,
       winHeight: window.innerHeight,
       aspectRatio: window.innerWidth / window.innerHeight,

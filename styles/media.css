@@ -1,10 +1,22 @@
 /* ADAPTIVE */
-
-/* Large Tablets & Small Desktops */
-@media (max-width: 1200px) {
-  .home-title h1 {
-    font-size: clamp(2.5rem, 5vw, 5rem);
+@media (max-width: 1240px) {
+  .services-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
   }
+
+  .pricing-section {
+    height: unset;
+    min-height: auto;
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* .home-title h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+  } */
   
   .services-wrapper {
     gap: 30px;
@@ -31,7 +43,7 @@
     top: 0;
     right: -100%;
     height: fit-content;
-    width: 70%;  /* Increased for better usability */
+    width: 70%;
     transition: right 0.4s ease;
     z-index: 1000;
     font-size: 18px;
@@ -39,15 +51,15 @@
     background: black;
     backdrop-filter: blur(20px);
     border-radius: 12px;
-    padding: 20px 0;  /* Added padding */
+    padding: 20px 0;
   }
 
   .navbar-links {
     flex: unset;
     justify-content: unset;
     flex-direction: column;
-    padding: 80px 20px 20px 20px;  /* Reduced top padding */
-    gap: 20px;  /* Better spacing between links */
+    padding: 80px 20px 20px 20px;
+    gap: 20px;
   }
 
   .call-button {
@@ -65,15 +77,10 @@
 
 /* Tablets & Medium Screens */
 @media (max-width: 970px) {
-  /* Comparison table improvements */
   .comparison-table {
     overflow-x: auto;
     max-width: 100%;
-    padding-bottom: 15px;  /* Space for scrollbar */
-  }
-  
-  .comparison-table table {
-    min-width: 600px;  /* Ensures table stays readable */
+    padding-bottom: 15px;
   }
 
   .home-content img {
@@ -115,7 +122,6 @@
     display: none;
   }
   
-  /* Services section improvements */
   .services-section {
     height: unset;
     min-height: auto;
@@ -162,13 +168,6 @@
   .service-tab h2 {
     font-size: 22px;
   }
-  
-  /* Pricing section improvements */
-  .pricing-section {
-    height: unset;
-    min-height: auto;
-    padding: 120px 0;
-  }
 
   .pricing-grid {
     width: 90%;
@@ -176,13 +175,6 @@
   
   .pricing-card {
     flex: 1 1 250px;
-  }
-
-
-  .contacts-section {
-    height: unset;
-    min-height: auto;
-    padding: 120px 0;
   }
 }
 
@@ -192,7 +184,27 @@
   }
 }
 
-/* Medium Mobile Devices */
+@media (max-width: 850px) {
+  .contacts-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
+  .contacts-title {
+    margin-bottom: 20px;
+  }
+  
+  #my-cal-inline {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 768px) {
   .home-section {
     justify-content: center;
@@ -220,8 +232,7 @@
     flex-direction: column;
     padding: 0 10px;  /* Reduced padding */
   }
-  
-  /* Fix slider arrows */
+
   .left-arrow {
     left: -10px;
   }
@@ -229,8 +240,7 @@
   .right-arrow {
     right: -10px;
   }
-  
-  /* Footer improvements */
+
   .footer-columns {
     flex-direction: column;
     gap: 30px;
@@ -249,8 +259,7 @@
   .footer-copyright {
     text-align: center;
   }
-  
-  /* Service tabs */
+
   .service-tab h1 {
     font-size: 32px;
   }
@@ -270,43 +279,25 @@
   }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 640px) {
-  section {
-    height: unset;
-    min-height: auto;
-    padding: 120px 0;
+  .section-title {
+    font-size: 24px;
   }
 
   .home-content {
     text-align: center;  /* Keep centered on small screens */
   }
 
-  .home-about-content {
-    display: none;
-  }
-
-  .about-section {
-    display: flex;
-  }
-  
   .subtitle {
-    font-weight: bold;
-    font-size: 24px;  /* Reduced from 36px */
-    margin-bottom: 40px;  /* Reduced from 80px */
+    margin-bottom: 40px;
   }
 
   .about-slide p {
     font-size: 16px;  /* Increased from 0.8rem for better readability */
   }
-  
+
   .about-slide li {
     font-size: 16px;  /* Increased from 0.8rem */
-  }
-  
-  /* Pricing cards improvements */
-  .pricing-title {
-    font-size: 24px;  /* Reduced from 36px */
   }
 
   .pricing-subtitle {
@@ -319,38 +310,26 @@
     min-width: unset;
     max-width: unset;
   }
-  
-  /* Compare section */
-  .comparison-title {
-    font-size: 24px;
-  }
 
   .comparison-table th,
   .comparison-table td {
     font-size: 14px;
   }
-  
+
   .quote-section h2 {
     font-size: 24px;
   }
-  
+
   .quote-section p {
     font-size: 16px;
   }
-  
+
   .quote-button {
     padding: 12px 24px;
     font-size: 16px;
   }
-  
-  /* Calendar fixes */
-  #my-cal-inline {
-    width: 100%;
-    min-height: 600px;
-  }
 }
 
-/* Extra Small Devices */
 @media (max-width: 480px) {
   .logo img {
     height: 30px;
@@ -378,60 +357,58 @@
     padding: 12px 15px;
     font-size: 14px;
   }
-  
+
   .services-sidebar h1 {
     padding: 20px 15px 10px 15px;
     font-size: 18px;
   }
-  
+
   .service-tab h1 {
     font-size: 24px;
   }
-  
+
   .service-tab h2 {
     font-size: 18px;
   }
-  
+
   .service-tab h3 {
     font-size: 16px;
     margin-top: 25px;
   }
-  
+
   .service-tab p,
   .service-tab li {
     font-size: 14px;
   }
-  
-  /* Footer simplification */
+
   .footer-container {
     width: 90%;
-  }
-  
-  .contacts-title {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-  
-  /* Contact section */
-  .contacts-content {
-    width: 100%;
-  }
-}
-
-/* Fix for calendar on small screens */
-@media (max-width: 768px) {
-  #my-cal-inline {
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 }
 
 /* Landscape orientation fixes */
-@media (max-height: 600px) and (orientation: landscape) {
-  section {
-    padding: 100px 0;
+@media (max-height: 770px) {
+  .about-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
   }
-  
+
+  .services-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
+  .comparison-section {
+    height: unset;
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
   .home-title h1 {
     font-size: clamp(1.8rem, 4vw, 3rem);
   }

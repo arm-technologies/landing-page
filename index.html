@@ -10,18 +10,21 @@
   <!-- icons -->
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <!-- fonts should be here -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- style -->
+  <link rel="preload" href="styles/common.css" as="style">
+  <link rel="stylesheet" href="styles/common.css">
   <link rel="preload" href="styles/style.css" as="style">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="preload" href="styles/media.css" as="style">
   <link rel="stylesheet" href="styles/media.css">
   <!-- title -->
-  <title>FlowBorne Tech</title>
+  <title>FlowBorne</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <!-- <div class="background"></div> -->
+  <canvas id="background-dots"></canvas>
+  <div class="moving-blob"></div>
   <div class="scroll-container">
     <!-- header -->
     <div class="navbar">
@@ -73,7 +76,7 @@
 
           <div class="about-slider">
             <div class="about-slide active">
-              <h2 class="subtitle">Our Mission</h2>
+              <h2 class="subtitle section-title">Our Mission</h2>
               <p>
                 At FlowBorne, we're experienced DevOps engineers passionate about building efficient, secure, and
                 streamlined software development workflows. Our mission is to empower businesses to scale with reliable,
@@ -88,7 +91,7 @@
             </div>
 
             <div class="about-slide">
-              <h2 class="subtitle">Our Expertise</h2>
+              <h2 class="subtitle section-title">Our Expertise</h2>
               <p>
                 We deliver comprehensive DevOps services through expert consulting, helping you integrate DevOps
                 practices into existing projects and identify opportunities for improvement. Our implementation services
@@ -104,7 +107,7 @@
             </div>
 
             <div class="about-slide">
-              <h2 class="subtitle">Our Benefits & Vision</h2>
+              <h2 class="subtitle section-title">Our Benefits & Vision</h2>
               <p>
                 Working with Flowborne delivers concrete business value through reduced time-to-market with automated
                 deployment pipelines and enhanced security through continuous vulnerability scanning. Our clients enjoy
@@ -272,7 +275,7 @@
 
     <!-- pricing section -->
     <section id="pricing" class="pricing-section">
-      <h1 class="pricing-title">Flexible, Transparent Pricing for DevOps Services</h1>
+      <h1 class="pricing-title section-title">Flexible, Transparent Pricing for DevOps Services</h1>
       <p class="pricing-subtitle">Every business is different. We tailor our services to match your needs.</p>
       <div class="pricing-grid">
         <div class="pricing-row">
@@ -307,7 +310,7 @@
           </div>
         </div>
 
-        <div class="pricing-row center-row">
+        <div class="pricing-row">
           <div class="pricing-card">
             <h2>Security & Observability</h2>
             <p class="price">From $2,500</p>
@@ -333,7 +336,7 @@
 
     <!-- comparison section -->
     <section id="comparison" class="comparison-section">
-      <h1 class="comparison-title">Quick Comparison</h1>
+      <h1 class="comparison-title section-title">Quick Comparison</h1>
       <div class="comparison-table">
         <table>
           <thead>
@@ -391,12 +394,13 @@
     <!-- contacts section -->
     <section id="contacts" class="contacts-section">
       <div class="contacts-content">
-        <h1 class="contacts-title">Book a Consultation</h1>
+        <h1 class="contacts-title section-title">Book a Consultation</h1>
         <div id="my-cal-inline"></div>
       </div>
     </section>
   </div>
 
+  <!-- footer -->
   <footer class="footer-section">
     <div class="footer-container">
       <div class="footer-columns">
@@ -463,9 +467,7 @@
     </div>
   </footer>
 
-  <script src="scripts/burger.js"></script>
-  <script src="scripts/about-slider.js"></script>
-  <script src="scripts/services.js"></script>
+  <!-- cal.com widget -->
   <script type="text/javascript">
     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
     Cal("init", "30min", { origin: "https://cal.com" });
@@ -479,7 +481,16 @@
     Cal.ns["30min"]("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#FADF11" }, "dark": { "cal-brand": "#FADF11" } }, "hideEventTypeDetails": false, "layout": "month_view" });
   </script>
 
-  <canvas id="c"></canvas>
+  <!-- burger logic -->
+  <script src="scripts/burger.js"></script>
+
+  <!-- about section slider -->
+  <script src="scripts/about-slider.js"></script>
+
+  <!-- services section logic -->
+  <script src="scripts/services.js"></script>
+
+  <!-- background animation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="scripts/vertex.js"></script>
 </body>
