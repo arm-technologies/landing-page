@@ -24,7 +24,7 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <canvas id="background-dots"></canvas>
-  <div class="moving-blob"></div>
+  <div class="moving-blob" id="moving-blob"></div>
   <div class="scroll-container">
     <!-- header -->
     <div class="navbar">
@@ -58,7 +58,7 @@
       <div class="home-container">
         <div class="home-content">
           <div class="home-title">
-            <h1>DevOps Services<br>in Your Pocket —<br>Secure and Effortless</h1>
+            <h1>DevOps Services<br>in Your Pocket —<br><span class="gradient-text">Secure and Effortless</span></h1>
             <p>Your all-in-one DevOps partner for automation, cloud, CI/CD, and beyond.</p>
             <a href="#contacts">
               <button class="home-button">Schedule a Meeting</button>
@@ -493,6 +493,7 @@
   <!-- background animation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="scripts/vertex.js"></script>
+  <script src="scripts/blob.js"></script>
 </body>
 
 </html>
