@@ -631,7 +631,7 @@
 }
 
 /* CONTACT US SECTION */
-.contacts-section {
+.call-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -640,12 +640,69 @@
   text-align: center;
 }
 
-.contacts-content {
+.call-content {
   max-width: 2000px;
   width: 100%;
   position: relative;
 }
 
+/* CONTACTS SECTION */
+.contacts-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-content {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contacts-content div {
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(100px);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.contacts-section p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacts-content a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacts-content a:hover {
+  color: #3b82f6;
+}
+
+.socials-content {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.socials-content a {
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.socials-content a:hover {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
 
 /* FOOTER SECTION */
 .footer-section {

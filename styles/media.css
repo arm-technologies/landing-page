@@ -198,13 +198,13 @@
 }
 
 @media (max-width: 850px) {
-  .contacts-section {
+  .call-section {
     height: unset;
     min-height: auto;
     padding: 120px 0;
   }
 
-  .contacts-title {
+  .call-title {
     margin-bottom: 20px;
   }
   
@@ -421,13 +421,35 @@
   }
 }
 
-@media (max-height: 600px) and (orientation: landscape) {
+@media (max-height: 770px) and (orientation: landscape) {
   .home-title h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(3rem, 4vw, 5rem);
   }
-  
-  .navbar-menu.active {
-    overflow-y: auto;
-    max-height: 90vh;
+
+  .home-button {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .about-section {
+    height: unset;
+    min-height: auto;
+    padding: 200px 0;
+  }
+
+  .pricing-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
+  .call-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
+  .call-title {
+    padding-bottom: 10px;
   }
 }
