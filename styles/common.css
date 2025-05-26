@@ -20,6 +20,10 @@ body, html {
   color: white;
 }
 
+html {
+  background: black;
+}
+
 .scroll-container {
   height: auto;
   min-height: 100vh;
