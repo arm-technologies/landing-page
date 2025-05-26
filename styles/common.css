@@ -45,6 +45,14 @@ section {
   font-size: 36px;
 }
 
+.gradient-text {
+  background: linear-gradient(90deg, #FADF11, #1E1BF9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
 
 /* ANIMATIONS */
 #background-dots {
@@ -52,20 +60,30 @@ section {
   top: 0;
   left: 0;
   display: block;
-  mix-blend-mode: screen;
+
   z-index: -2;
 }
 
 .moving-blob {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 150vw;
-  height: 150vh;
-  background: radial-gradient(circle, rgba(187, 199, 54, 1) 0%, rgba(10, 10, 255, 1) 34%, rgba(0, 0, 0, 1) 44%);
+  right: 0;
+  width: 80vw;
+  height: 70vh;
+  background: radial-gradient(
+    ellipse at center, 
+    rgba(250, 223, 17, 0.8) 0%, 
+    rgba(30, 27, 249, 0.8) 34%, 
+    rgba(0, 0, 0, 1) 60%
+  );
   mix-blend-mode: screen;
-  animation: blobMove 60s ease-in-out infinite alternate;
   z-index: -1;
+  transform-origin: center center;
+  border-radius: 70% / 100%;
+  opacity: 0.8;
+  will-change: transform, border-radius, opacity;
+  filter: blur(20px);
+  transition: background 0.8s ease-out;
 }
 
 @keyframes blobMove {
