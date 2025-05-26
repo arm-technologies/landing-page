@@ -204,6 +204,12 @@
     padding: 120px 0;
   }
 
+  .contacts-section {
+    height: unset;
+    min-height: auto;
+    padding: 120px 0;
+  }
+
   .call-title {
     margin-bottom: 20px;
   }
@@ -289,6 +295,29 @@
   .service-tab p,
   .service-tab li {
     font-size: 16px;
+  }
+
+  .contacts-title {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+
+  .contacts-content {
+    gap: 1rem;
+  }
+
+  .socials-content {
+    gap: 1rem;
+    padding: 15px;
+  }
+
+  .social-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon span {
+    font-size: 0.7rem;
   }
 }
 
@@ -392,6 +421,27 @@
   .service-tab p,
   .service-tab li {
     font-size: 14px;
+  }
+
+  .contacts-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-card p {
+    font-size: 1rem;
+  }
+
+  .contact-card a {
+    font-size: 0.9rem;
+  }
+
+  .sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .social-card {
+    min-width: 122px;
   }
 
   .footer-container {

@@ -524,7 +524,7 @@
 .pricing-card .price {
   font-size: 18px;
   font-weight: bold;
-  color: rgba(10, 10, 255, 1);
+  color: #3b82f6;
   margin-bottom: 20px;
 }
 
@@ -648,60 +648,103 @@
 
 /* CONTACTS SECTION */
 .contacts-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  padding-top: 40px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .contacts-content {
   display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
-.contacts-content div {
-  min-width: 250px;
+.contact-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(100px);
-  padding: 20px;
-  border-radius: 12px;
+  backdrop-filter: blur(80px);
+  padding: 20px 30px;
+  border-radius: 16px;
+  min-width: 250px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
 }
 
-.contacts-section p {
-  font-weight: 600;
+.contact-card:hover {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+
+.contact-icon {
+  color: rgb(223, 56, 120);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
-.contacts-content a {
+.contact-card a {
   color: #60a5fa;
+  font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.contacts-content a:hover {
+.contact-card a:hover {
   color: #3b82f6;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 .socials-content {
   display: flex;
   gap: 2rem;
-  font-size: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(80px);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease;
+  min-width: 142px;
 }
 
-.socials-content a {
+.social-card:hover {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+
+.social-card a {
+  text-decoration: none;
   color: white;
-  transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.socials-content a:hover {
-  transform: scale(1.2);
+.social-card a:hover {
   color: #3b82f6;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.social-icon span {
+  margin-top: 0.3rem;
 }
 
 /* FOOTER SECTION */
@@ -718,7 +761,6 @@
 .footer-container {
   padding: 60px 40px 30px;
   max-width: 1400px;
-  /* width: 80%; */
   margin: 0 auto;
 }
 
