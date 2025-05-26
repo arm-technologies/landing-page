@@ -10,7 +10,7 @@ html::-webkit-scrollbar {
 }
 
 body, html {
-  height: 100svh;
+  height: auto;
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -18,10 +18,6 @@ body, html {
   -webkit-overflow-scrolling: touch;
   font-family: 'Rubik', sans-serif;
   color: white;
-}
-
-html {
-  background: black;
 }
 
 .scroll-container {
